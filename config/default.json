@@ -1,0 +1,19 @@
+{
+  "google": {
+    "clientId": "1011952322822-p9va4robh4uoujd44j3h8i8t74vvmflo.apps.googleusercontent.com",
+    "clientSecret": "zTHRMhKPazA4R8jhDl-TMcGW",
+    "scopes": [
+      "https://www.googleapis.com/auth/contacts.readonly",
+      "https://www.googleapis.com/auth/userinfo.email",
+      "https://www.googleapis.com/auth/userinfo.profile"
+    ]
+  },
+  "googleApi": {
+    "getProfile": "https://www.googleapis.com/oauth2/v3/userinfo",
+    "getContacts": "https://people.googleapis.com/v1/people/me/connections?personFields=names,emailAddresses,photos"
+  },
+  "jsonWebToken": {
+    "signature": "fxZmrIB9yJAwsQgsu7e5iGwA8jYGIsMT",
+    "tokenExpiration": "1h"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "name": "nodejs-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "NODE_ENV=production node ./dist/index.js",
+    "heroku-postbuild": "npm run tsc",
+    "prettify": "prettier --write",
+    "tsc": "tsc",
+    "dev": "nodemon",
+    "test": "jest"
+  },
+  "author": "Meet Alodariya",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "bcrypt": "^4.0.1",
+    "body-parser": "^1.19.0",
+    "config": "^3.3.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "express-validator": "^6.4.0",
+    "googleapis": "^59.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "passport": "^0.4.1",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-google-plus-token": "^2.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2",
+    "jest": "^26.0.1",
+    "lint-staged": "^10.2.9",
+    "husky": "^4.2.5",
+    "prettier": "^2.0.5",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,js,json,md}": [
+      "npm run prettify",
+      "git add"
+    ]
+  }
+}

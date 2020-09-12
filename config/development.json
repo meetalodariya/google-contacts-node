@@ -1,0 +1,4 @@
+{
+  "oauthCallback": "http://localhost:8001/auth/google/callback",
+  "clientHost": "http://localhost:3000"
+}

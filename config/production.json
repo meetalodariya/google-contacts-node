@@ -1,0 +1,4 @@
+{
+  "oauthCallback": "https://google-contact-node.herokuapp.com/auth/google/callback",
+  "clientHost": " https://google-contact-client.herokuapp.com"
+}
