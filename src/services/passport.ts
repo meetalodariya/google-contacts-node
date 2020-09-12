@@ -14,7 +14,7 @@ passport.use(
   "google",
   new GoogleStrategy(
     {
-      callbackURL: config.get("oauthCallback") + "/auth/google/callback",
+      callbackURL: config.get("oauthCallback"),
       clientID: config.get("google.clientId"),
       clientSecret: config.get("google.clientSecret"),
       proxy: true,
