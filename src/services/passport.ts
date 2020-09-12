@@ -14,9 +14,10 @@ passport.use(
   "google",
   new GoogleStrategy(
     {
-      callbackURL: "/auth/google/callback",
+      callbackURL: config.get("oauthCallback") + "/auth/google/callback",
       clientID: config.get("google.clientId"),
       clientSecret: config.get("google.clientSecret"),
+      proxy: true,
     },
     async (accessToken, refreshToken, profile, done) => {
       console.log(profile);
