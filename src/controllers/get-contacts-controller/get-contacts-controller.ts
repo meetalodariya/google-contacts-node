@@ -21,7 +21,6 @@ const getContactsController = async (req, res, next) => {
     );
     return res.json({ contacts: mappedContacts });
   } catch (err) {
-    console.log(err);
     next(err);
   }
 };

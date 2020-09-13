@@ -18,7 +18,6 @@ app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
   next();
 });
-app.enable("trust proxy");
 app.use(bodyParser.json());
 app.use(passport.initialize());
 app.use(passport.session());
